@@ -1,6 +1,4 @@
 FROM ubuntu:latest
-ADD . /code
-WORKDIR /code
 # Update the repository sources list
 RUN apt-get update 
 
