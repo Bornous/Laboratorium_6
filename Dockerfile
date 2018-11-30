@@ -1,5 +1,5 @@
-FROM python:3.4-alpine
+FROM ubuntu:latest
 ADD . /code
 WORKDIR /code
-RUN pip install -r requirements.txt
+RUN apt-get install apache
 CMD ["python", "app.py"]
